@@ -121,33 +121,25 @@ main{
 /*SECTION2*/
 #section2{
     background-color: olive;
-    height: 40em;
+    height: 60em;
 }
 #section2 .container{
-    display: flex;
-    flex-direction: column;
     
 }
 #section2 .container >h1{
     font-size: 50px;
     text-align: center;
 }
-#section2 .container div{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    
-    
+#section2 .grid-container{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    grid-gap: 50px;
 }
-.benefit{
-    width:30%;
-    
-    border: 2px solid white;
-    
-    margin: 1em;
-    padding: 70px;
-    border-radius: 50px;
-   
+.grid-item1{
+    height: 20em;
+    background: #ffb642;
+    padding: 10px;   
+    border: 1px solid red;
 }
 
 
